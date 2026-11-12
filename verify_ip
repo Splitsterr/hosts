@@ -1,0 +1,14 @@
+verify_ip()
+{
+	hostname="$1"
+	expected_ip="$2"
+	dns_server="$3"
+	
+	result=$(nslookup "$hostname" "$dns")
+	if echo "$result" | grep -q "$ip";
+	then
+	echo "IP valid"
+	else
+	echo "IP invalid"
+	fi
+} 
