@@ -11,4 +11,5 @@ verify_ip()
 	else
 	echo "IP invalid"
 	fi
+	echo "sal"
 } 
