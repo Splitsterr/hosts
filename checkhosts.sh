@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+echo Salut frate
 cat /etc/hosts | while read ip name rest
 do
 	if [ -z "$ip" ] || [[ "$ip" == "#"* ]]
